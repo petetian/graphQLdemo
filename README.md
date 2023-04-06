@@ -3,9 +3,9 @@
 This is a NodeJS project of GraphQL demo.
 
 ## How to start the application
-
+```
 npm start
-
+```
 ## Create a product
 
 mutation {

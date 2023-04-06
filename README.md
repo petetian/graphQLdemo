@@ -7,7 +7,7 @@ This is a NodeJS project of GraphQL demo.
 npm start
 ```
 ## Create a product
-
+```
 mutation {
   createProduct(input: {
     name: "Tesla Y",
@@ -32,11 +32,12 @@ mutation {
    inventory
   }
 }
-
+```
 
 ## Query
 
 ### Get all
+```
 query {
   getAllProducts {
     id
@@ -44,12 +45,13 @@ query {
     price
   } 
 }
-
+```
 ### Get a product
-
+```
 query {
   getProduct(id: <replace with ID string>) {
     name
     inventory
   }
 }
+```

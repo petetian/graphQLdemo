@@ -2,11 +2,18 @@
 
 This is a NodeJS project of GraphQL demo.
 
-## How to start the application
+## Start the application
 ```
 npm start
 ```
-## Create a product
+
+## Test in browser
+Open a browser, in the address bar enter
+```
+localhost:8080
+```
+
+### Create a product
 ```
 mutation {
   createProduct(input: {
@@ -34,9 +41,9 @@ mutation {
 }
 ```
 
-## Query
+### Query
 
-### Get all
+#### Get all
 ```
 query {
   getAllProducts {
@@ -46,7 +53,7 @@ query {
   } 
 }
 ```
-### Get a product
+#### Get a product
 ```
 query {
   getProduct(id: <replace with ID string>) {

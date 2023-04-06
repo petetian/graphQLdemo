@@ -10,10 +10,10 @@ npm start
 ## Test in browser
 Open a browser, in the address bar enter
 ```
-localhost:8080
+localhost:8080/graphql
 ```
 
-### Create a product
+### Create a product example
 ```
 mutation {
   createProduct(input: {

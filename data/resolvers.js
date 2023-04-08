@@ -30,6 +30,14 @@ const resolvers = {
         productDatabase[id] = newProduct;
         return newProduct;
     },
+
+    // function to update a product
+    updateProduct: ({id, input}) => {
+        console.log("Input received:", input); // Add this line for debugging
+        const newProduct = new Product(id, input);
+        productDatabase[id] = newProduct;
+        return newProduct;
+    },
 }; 
 
 export default resolvers;

@@ -45,6 +45,7 @@ const schema = buildSchema(`
 
     type Mutation {
         createProduct(input: ProductInput): Product
+        updateProduct(id: ID, input: ProductInput): Product
     }
 
 `);

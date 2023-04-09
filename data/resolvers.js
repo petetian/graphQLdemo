@@ -38,6 +38,13 @@ const resolvers = {
         productDatabase[id] = newProduct;
         return newProduct;
     },
+
+    // function to delete a product
+    deleteProduct: ({id}) => {      
+        const deletedProduct = productDatabase[id];
+        delete productDatabase[id];
+        return deletedProduct;
+    }
 }; 
 
 export default resolvers;

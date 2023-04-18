@@ -49,6 +49,12 @@ const resolvers = {
     // function to delete a product
     deleteProduct: ({id}) => {      
         const deletedProduct = productDatabase[id];
+
+        // if the product does not exist, send an error
+        if (!productDatabase[id]) {
+            throw new Error('No product exists with id ' + id);
+        }
+        
         delete productDatabase[id];
         return deletedProduct;
     }
